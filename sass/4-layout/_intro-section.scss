@@ -6,20 +6,20 @@
     display: flex;
     flex-direction: column;
     margin-top: 101px;
-    width: 242px;
     gap: 12.2px;
+    flex-shrink: 0;
 
     h1 {
-        height: 55px;
-        font-variant: small-caps;
-        font-weight: 500;
-        font-size: 24px;
+        width: 242px;
         color: $gray-1;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
         line-height: 116%;
+        font-variant: small-caps;
     }
 
     p {
-        height: 52.152px;
         width: 240.19px;
         font-size: 10px;
         font-weight: 400;

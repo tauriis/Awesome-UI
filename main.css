@@ -90,19 +90,19 @@ header .header-nav {
   display: flex;
   flex-direction: column;
   margin-top: 101px;
-  width: 242px;
   gap: 12.2px;
+  flex-shrink: 0;
 }
 .intro-h-p h1 {
-  height: 55px;
-  font-variant: small-caps;
-  font-weight: 500;
-  font-size: 24px;
+  width: 242px;
   color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 116%;
+  font-variant: small-caps;
 }
 .intro-h-p p {
-  height: 52.152px;
   width: 240.19px;
   font-size: 10px;
   font-weight: 400;
@@ -582,6 +582,8 @@ div.bg-blur-4 {
 
 .intro-button {
   margin-top: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .intro-button button {
   display: flex;
