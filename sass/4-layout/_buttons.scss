@@ -1,0 +1,33 @@
+.intro-button {
+    margin-top: 4px;
+
+    @include button;
+}
+
+.container {
+    
+    button {
+        width: 195.258px;
+        height: 40.725px;
+    }
+}
+
+.footer-button {
+    @include button;
+    width: fit-content;
+    margin-top: 28px;
+
+    button {
+        width: 283px;
+        height: 56.6px;
+        border-radius: 1.551px;
+        box-shadow: 0px 15.507px 31.014px 0px rgba(128, 143, 150, 0.19);
+        font-size: 12.405px;
+        padding: 21px 22px;
+
+        img {
+            width: 17.058px;
+            height: 11.63px;
+        }
+    }
+}

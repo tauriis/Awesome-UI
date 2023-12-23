@@ -1,0 +1,123 @@
+@mixin section {
+    position: relative;
+    display: flex;
+    padding-left: 32px;
+}
+
+@mixin grid-items {
+    #car-rental {
+        background: #FFF;
+        box-shadow: 0px 3.163px 16.869px 0px rgba(155, 148, 148, 0.17);
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 155.071px;
+        height: 127.61px;
+        border-radius: 4.308px;
+        padding: 22px;
+        gap: 8px;
+    }
+
+    .grid-icon-bg {
+        width: 25.326px;
+        height: 25.326px;
+        border-radius: 4.308px;
+        background: $white-1;
+        box-shadow: 0px 2.154px 2.154px 0px rgba(0, 0, 0, 0.04);
+        display: flex;
+        padding: 5px;
+    }
+
+    .grid-icon-bg-g {
+        width: 25.326px;
+        height: 25.326px;
+        border-radius: 4.308px;
+        background: #647B64;
+        display: flex;
+        padding: 5px;
+    }
+
+    .grid-heading {
+        width: 72.69px;
+        height: 16.692px;
+        color: $gray-1;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 116%;
+        font-variant: small-caps;
+    }
+
+    .grid-p {
+        width: 113.459px;
+        height: 27.352px;
+        color: $gray-2;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 132%;
+        letter-spacing: 0.32px;
+    }
+}
+
+@mixin section-3-card-3 {
+    .code-h {
+        width: 89.891px;
+        height: 13.527px;
+        color: $white-1;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 116%;
+        font-variant: small-caps;
+        margin-top: 10.47px;
+    }
+
+    p {
+        width: 113.455px;
+        height: 27.491px;
+        color: $white-1;
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 132%;
+        letter-spacing: 0.32px;
+        margin-top: 2.62px;
+    }  
+}
+
+@mixin button {
+    button {
+        display: flex;
+        padding: 13.61px 11.03px 13px 15px;
+        justify-content: space-between;
+        align-items: center;
+        width: 175.51px;
+        height: 36.606px;
+        background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%);
+        color: $white-2;
+        border: none;
+        border-radius: 1.003px;
+        box-shadow: 0px 10.029px 20.058px 0px rgba(128, 143, 150, 0.19);
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 125.5%;
+        letter-spacing: 1.55px;
+        text-transform: uppercase;
+        
+
+        img {
+            width: 11.032px;
+            height: 7.522px;
+        }
+    }
+}
+
+@mixin reset {
+    header *, main *, .section-1 *, .section-2 *, .section-3 *, .section-3-h *, .section-4 *, .section-5 *, footer * {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        gap: 0;
+        row-gap: 0;
+        column-gap: 0;
+    }
+}

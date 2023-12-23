@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    width: 375px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 32px 0 32px;
+
+    .header-logo {
+        display: flex;
+        text-align: center;
+        gap: 12px;
+    }
+
+    ul {
+        display: none;
+        gap: 48px;
+        font-weight: 500;
+        color: $gray-1;
+        line-height: 20px;
+        font-variant: small-caps;
+    }
+
+    .header-nav {
+        display: none;
+        gap: 48px;
+    }
+}

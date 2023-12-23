@@ -1,0 +1,12 @@
+
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-top: 72.47px;
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+    @include grid-items
+}
