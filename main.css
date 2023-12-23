@@ -96,7 +96,7 @@ header .header-nav {
 .intro-h-p h1 {
   height: 55px;
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   color: #333;
   line-height: 116%;
@@ -382,8 +382,6 @@ div.people .item-container .name-container {
   margin-top: 11px;
 }
 div.people .item-container h1.duty {
-  width: 98px;
-  height: 13px;
   color: #333;
   font-size: 12px;
   font-weight: 500;
@@ -391,8 +389,6 @@ div.people .item-container h1.duty {
   font-variant: small-caps;
 }
 div.people .item-container h2.name {
-  width: 81.758px;
-  height: 10.664px;
   color: #4F4F4F;
   font-size: 10px;
   font-weight: 400;
@@ -410,7 +406,6 @@ div.people .item-container p.quote {
   font-weight: 400;
   line-height: 132%;
   letter-spacing: 0.48px;
-  order: 1;
 }
 
 .people-img {
