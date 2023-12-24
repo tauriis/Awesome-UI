@@ -3,7 +3,7 @@ header {
     width: 375px;
     align-items: center;
     justify-content: space-between;
-    padding: 48px 32px 0 32px;
+    padding: 40px 32px 0 32px;
 
     .header-logo {
         display: flex;
@@ -12,7 +12,7 @@ header {
     }
 
     ul {
-        display: none;
+        display: flex;
         gap: 48px;
         font-weight: 500;
         color: $gray-1;
@@ -23,5 +23,7 @@ header {
     .header-nav {
         display: none;
         gap: 48px;
+        align-items: center;
+        
     }
 }

@@ -1,0 +1,109 @@
+footer {
+    @include section;
+    flex-direction: column;
+    background: #F0DCC5;
+    padding: 40px 47px 40px 32px;
+    width: 375px;
+    
+    .socials {
+        display: flex;
+        gap: 16px;
+        margin-top: 19px;
+        .socials-bg {
+            background: url(images/BG.svg);
+            @include img-bg-prop;
+            @include socials-icon-size;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .socials-icon {
+            @include socials-icon-size;
+        }
+    }
+  }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+
+    .footer-logo {
+        width: 185px;
+    }
+    p {
+        @include p;
+        width: 249px;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+
+    p:nth-child(-n+3) {
+        padding-top: 8px;
+    }
+}
+
+.footer-links {
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    h1 {
+        @include h1;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: $gray-1;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .company li:nth-child(2)::before {
+        content: "Lorem Ipsum 2";
+    }
+    .company li:nth-child(3)::before {
+        content: "Lorem Ipsum 3";
+    }
+    .company li:nth-child(4)::before {
+        content: "Lorem Ipsum 4";
+    }
+    .company li:nth-child(5)::before {
+        content: "Lorem Ipsum 5";
+    }
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 283px;
+    gap: 13px;
+    margin-top: 40px;
+
+    label {
+        @include h1;
+        line-height: normal;
+    }
+
+    textarea {
+        display: flex;
+        width: 283px;
+        height: 113px;
+        background: $white-1;
+        border-radius: 2px;
+        border: none;
+        padding: 12px 24px;
+        color: $gray-2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        resize: none;
+        outline: none;
+    }
+}

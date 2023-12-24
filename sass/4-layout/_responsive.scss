@@ -1,3 +1,405 @@
 @media screen and (min-width: 1440px) {
-    
-}
+    body, html {
+        width: 1440px;
+        flex-direction: column;
+        background: $white-1;
+        align-items: center;
+        
+        header {
+            width: 100%;
+            padding: 50px 140px 0 140px;
+
+            .nav-icon {
+                display: none;
+            }
+
+            .header-nav {
+                display: flex;
+            }
+        }
+
+        main {
+            width: 1440px;
+
+            .section-1 {
+                padding: 0 180px;
+
+                .gray-circle {
+                    display: flex;
+                    position: absolute;
+                    left: 0;
+                    top: 552px;
+                    width: 132px;
+                    height: 132px;
+                }
+                
+                div.bg-blur-1 {
+                    @include desktop-bg-blur-size;
+                    filter: blur(300px);
+                    top: 71px;
+                    left: 253px;
+                }
+                div.bg-blur-2 {
+                    @include desktop-bg-blur-size;
+                    filter: blur(300px);
+                    top: 71px;
+                    right: 253px;
+                }
+                div.bg-blur-3 {
+                    @include desktop-bg-blur-size;
+                    filter: blur(300px);
+                    top: 526px;
+                    left: 253px;
+                }
+                div.bg-blur-4 {
+                    @include desktop-bg-blur-size;
+                    filter: blur(300px);
+                    top: 526px;
+                    right: 253px;
+                }
+                div.bg-blur-5 {
+                    position: absolute;
+                    display: flex;
+                    @include desktop-bg-blur-size;
+                    filter: blur(800px);
+                    top: 1389px;
+                    left: 253px;
+                }
+                div.bg-blur-6 {
+                    position: absolute;
+                    display: flex;
+                    @include desktop-bg-blur-size;
+                    filter: blur(800px);
+                    top: 1389px;
+                    right: 253px;
+                }
+                div.bg-blur-7 {
+                    position: absolute;
+                    display: flex;
+                    @include desktop-bg-blur-size;
+                    filter: blur(800px);
+                    top: 1911px;
+                    left: 253px;
+                }
+                div.bg-blur-8 {
+                    position: absolute;
+                    display: flex;
+                    @include desktop-bg-blur-size;
+                    filter: blur(800px);
+                    top: 1911px;
+                    right: 253px;
+                }
+
+                .svg-container {
+                    top: 190px;
+                    left: 325px;
+            
+                    .circle {
+                        width: 84px;
+                        height: 84px;
+                    }
+                }
+
+                .hero-img-container {
+                    right: 180px;
+                    top: 72px;
+
+                    .hero-img {
+                        width: auto;
+                    }
+                }
+
+                .intro-h-p {
+                    margin-top: 213px;
+                    width: 495px;
+
+                    h1 {
+                        font-size: 48px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        width: 479px;
+                        letter-spacing: 0.8px;
+                    }
+                    @include desktop-button;
+                }
+            }
+            .section-2 {
+                margin-top: 244px;
+                padding: 0;
+                flex-direction: row;
+                gap: 109px;
+                .container-h {
+                    width: 717px;
+                    height: 153px;
+                    margin-left: -290px;
+                    justify-content: flex-end;
+                    padding-right: 60px;
+        
+                    .padding {
+                        gap: 17px;
+                    }
+
+                    h1 {
+                        font-size: 41px;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                        width: auto;
+                    }
+                }
+
+                .container {
+                    padding-left: 140px;
+
+                        p {
+                            margin: 22px 0 40px 0;
+                            width: 412px;
+                            font-size: 16px;
+                            letter-spacing: 0.64px;
+                        }
+                    }
+                }
+
+                .grid-area {
+                    row-gap: 20px;
+                    column-gap: 50px;
+                    margin-top: 40px;
+                    padding: 0;
+
+                    .item-2, .item-3, .item-4 {
+                        width: fit-content;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    #car-rental {
+                        width: 288px;
+                        height: 237px;
+                        padding: 40px 0 45px 35px;
+                        border-radius: 8px;
+                        box-shadow: 0px 5.874px 31.33px 0px rgba(155, 148, 148, 0.17);
+                    }
+
+                    .grid-icon-bg-g, .grid-icon-bg {
+                        width: 48px;
+                        height: 48px;
+                        padding: 10px;
+
+                        .grid-icon {
+                            display: flex;
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+
+                    .grid-heading {
+                        margin-top: 16px;
+                        width: 135px;
+                        height: 31px;
+                        font-size: 24px;
+                    }
+
+                    .grid-p {
+                        margin-top: 6px;
+                        width: 221px;
+                        font-size: 13px;
+                    }
+
+                }
+            }
+            .section-3 {
+                margin-top: 107px;
+                padding: 0 47px 40px 47px;
+                align-items: center;
+
+                .rectangle {
+                    display: flex;
+                }
+
+                .section-3-h {
+                    gap: 17px;
+
+                    h1::before {
+                        content: "amet,consectet iquet";
+                        font-size: 41px;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                    }
+                }
+
+                .code-container {
+                    justify-content: center;
+                    margin-top: 56px;
+                    gap: 40px;
+
+
+                    .container-c {
+                        width: 360px;
+                        height: 338px;
+                        border-radius: 8px;
+                        padding: 75px 50px;
+
+                        .code-icon {
+                            width: 64px;
+                            height: 64px;
+                        }
+
+                        .code-h {
+                            font-size: 24px;
+                            margin-top: 24px;
+                        }
+
+                        p {
+                            width: 260px;
+                            font-size: 16px;
+                            letter-spacing: 0.64px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+
+                .dots {
+                    width: 214px;
+                    height: 213px;
+                    left: 106px;
+                }
+            }
+            .section-4 {
+                padding-top: 215px;
+                gap: 105px;
+                .img-bg {
+                    margin-left: 200px;
+
+                    img {
+                        width: 563px;
+                        height: 545px;
+                        bottom: 60px;
+                        left: -60px;
+                    }
+                }
+
+                .container {
+                    margin-top: 100px;
+
+                    .container-h {
+                        .padding {
+                            gap: 17px;
+                        }
+                        @include desktop-h1-h2;
+                    }
+
+                    p {
+                        margin-top: 24px;
+                        width: 412px;
+                        font-size: 16px;
+                        letter-spacing: 0.64px;
+                    }
+
+                    @include desktop-button;
+                    .intro-button {
+                        margin-top: 40px;
+                    }
+                }
+            }
+            .section-5 {
+                padding: 0;
+                position: relative;
+                height: 703px;
+
+                .section-5-h {
+                    padding-left: 140px;
+
+                    @include desktop-h1-h2;
+                    h1 {
+                        margin-top: 17px;
+                    }
+
+                }
+
+                .container-h {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding-right: 100px;
+                    .arrows {
+                        display: flex;
+                    }
+                }
+
+                .people {
+                    gap: 40px;
+                    margin-top: 30px;
+                    margin-left: 140px;
+                    position: absolute;
+
+                    .item-container {
+                        width: 360px;
+                        height: 419px;
+                        padding: 32px 32px 32px 40px;
+                        border-radius: 8px;
+
+                        .name-container {
+                            gap: 5px;
+
+                            h1 {
+                                font-size: 16px;
+                            }
+
+                            h2 {
+                                font-size: 13px;
+                                letter-spacing: 0.52px;
+                            }
+
+                        }
+
+                        p.quote {
+                            width: 260px;
+                            font-size: 16px;
+                            letter-spacing: 0.64px;
+                            margin-top: 24px;
+                        }
+
+                        .people-img {
+                            width: 174.538px;
+                            height: 268px;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            width: 1440px;
+            height: 431px;
+            padding: 100px 140px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+
+            .footer-links {
+                margin-top: 0;
+                width: 420px;
+
+                .company li:nth-child(2)::before {
+                    content: "Lorem 2";
+                }
+                .company li:nth-child(3)::before {
+                    content: "Lorem 3";
+                }
+                .company li:nth-child(4)::before {
+                    content: "Lorem 4";
+                }
+                .company li:nth-child(5)::before {
+                    content: "Lorem 5";
+                }
+                }
+            .message {
+                margin-top: 0px;
+            }
+        }
+    }

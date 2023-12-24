@@ -5,11 +5,12 @@
     @include button;
 }
 
-.container {
-    
-    button {
-        width: 195.258px;
-        height: 40.725px;
+.section-2 {
+    .container {
+        button {
+            width: 195.258px;
+            height: 40.725px;
+        }
     }
 }
 
@@ -29,6 +30,25 @@
         img {
             width: 17.058px;
             height: 11.63px;
+        }
+    }
+}
+
+.header-nav {
+
+    .register-button {
+
+        button {
+            color: #FEFEFE;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px; /* 125% */
+            text-transform: none;
+            font-variant: small-caps;
+            padding: 10px 15px;
+            border-radius: 3px;
+            border: none;
+            background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%), linear-gradient(102deg, #0BB1E3 -4.62%, #0F2976 178.22%), #0E70AF; 
         }
     }
 }

@@ -1,0 +1,41 @@
+.section-2 {
+    @include section;
+    margin-top: 127px;
+    flex-direction: column;
+
+    .container-h {
+        display: flex;
+        margin-left: -197px;
+        width: 400px;
+        height: 68px;
+        align-items: center;
+        background: linear-gradient(164deg, rgba(239, 128, 49, 0.00) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0.00) 119.45%);
+
+        .padding {
+            display: flex;
+            flex-direction: column;
+            padding-left: 197px;
+            gap: 5px;
+        }
+
+        h1 {
+            @include h1;
+        }
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .container {
+        @include container;
+
+        p {
+            width: 258px;
+            margin: 16px 0 16px 0;
+            color: $gray-2;
+            font-size: 10px;
+            @include p;
+        }
+    }
+}

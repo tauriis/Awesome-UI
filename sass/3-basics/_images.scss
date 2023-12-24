@@ -1,17 +1,17 @@
-.eclipse {
+.svg-container {
     position: absolute;
     top: 80px;
     left: 107px;
-}
-
-.hero-img {
-    width: 177.966px;
 }
 
 .hero-img-container {
     position: absolute;
     right: -83px;
     top: 27px;
+
+    .hero-img {
+        width: 177.966px;
+    }
 }
 
 
@@ -21,4 +21,7 @@
     height: 92.945px;
     position: absolute;
     bottom: 0;
+    left: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

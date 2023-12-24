@@ -1,0 +1,84 @@
+.section-1 {
+    @include section;
+
+    .intro-h-p {
+        display: flex;
+        flex-direction: column;
+        margin-top: 101px;
+        gap: 12.2px;
+        flex-shrink: 0;
+        width: 246px;
+
+        h1 {
+            color: $gray-1;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 116%;
+            font-variant: small-caps;
+        }
+
+        p {
+            width: 240.19px;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 132%;
+            letter-spacing: 0.4px;
+            color: $gray-2;
+        }
+    }
+    div.bg-blur-1 {
+        @include bg-blur;
+        background: #F3B562;
+        filter: blur(200px);
+        top: 75px;
+        left: 3px;
+    }
+    
+    div.bg-blur-2 {
+        @include bg-blur;
+        background: #D16035;
+        filter: blur(200px);
+        top: 75px;
+        right: 0.3px;
+    }
+    div.bg-blur-3 {
+        @include bg-blur;
+        background: #EFDCC6;
+        filter: blur(250px);
+        top: 305px;
+        left: 3px;
+    }
+    
+    div.bg-blur-4 {
+        @include bg-blur;
+        background: #627964;
+        filter: blur(250px);
+        top: 305px;
+        right: 0.3px;
+    }
+    div.bg-blur-5 {
+        display: none;
+        background: #F3B562;
+        filter: blur(800px);
+    }
+    div.bg-blur-6 {
+        display: none;
+        background: #D16035;
+        filter: blur(800px);
+    }
+    div.bg-blur-7 {
+        display: none;
+        background: #627964;
+        filter: blur(250px);
+    }
+    div.bg-blur-8 {
+        display: none;
+        background: #627964;
+        filter: blur(250px);
+    }
+    
+    .gray-circle {
+        display: none;
+    }
+}

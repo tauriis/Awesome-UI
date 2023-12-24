@@ -1,5 +1,4 @@
 //1-Helpers
-@import "sass/1-helpers/functions";
 @import "sass/1-helpers/mixins";
 @import "sass/1-helpers/variables";
 
@@ -11,7 +10,12 @@
 //4-Layout
 @import "sass/4-layout/body";
 @import "sass/4-layout/header";
-@import "sass/4-layout/intro-section";
+@import "sass/4-layout/section-1";
+@import "sass/4-layout/section-2";
+@import "sass/4-layout/section-3";
+@import "sass/4-layout/section-4";
+@import "sass/4-layout/section-5";
+@import "sass/4-layout/footer";
 @import "sass/4-layout/buttons";
 @import "sass/4-layout/grid";
 @import "sass/4-layout/responsive";

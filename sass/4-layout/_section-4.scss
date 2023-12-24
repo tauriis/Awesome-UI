@@ -1,0 +1,54 @@
+
+.section-4 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 94px;
+    gap: 20px;
+    
+    .img-bg {
+        background: linear-gradient(198deg, rgba(239, 128, 49, 0.00) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0.00) 103.02%);
+        position: relative;
+        margin-left: -220px;
+        
+        img {
+            position: relative;
+            width: 286.234px;
+            height: 277.083px;
+            bottom: 30.5px;
+            left: -30.5px;
+        }
+    }
+
+    .container {
+        @include container;
+        margin-top: 38px;
+
+        p {
+            width: 258px;
+            color: $gray-2;
+            font-size: 10px;
+            margin: 16px 0 24px 0;
+            @include p;
+        }
+    }
+
+    .container-h {
+        display: flex;
+
+        .padding {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        h1 {
+            @include h1;
+            font-size: 22px;
+            width: 206.973px;
+        }
+
+        h2 {
+            @include h2;
+        }
+    }
+}

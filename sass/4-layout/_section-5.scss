@@ -1,0 +1,102 @@
+.section-5 {
+    padding-left: 35px;
+    margin-top: 48.4px;
+    padding-bottom: 65px;
+
+    .container-h {
+        display: inline-flex;
+        flex-direction: column;
+
+        .arrows {
+            display: none;
+        }
+
+        h1 {
+            @include h1;
+            font-size: 22px;
+            margin-top: 8px;
+        }
+
+        h2 {
+            @include h2;
+        }
+    }
+}
+
+div.people {
+    display: flex;
+    gap: 26px;
+    margin-top: 50px;
+
+    .item-container {
+        background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%), #FFF;
+        padding: 21px 16px 21px 26px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 233.379px;
+        height: 271.628px;
+
+        .name-container {
+            position: absolute;
+            width: fit-content;
+            align-self: flex-end;
+            margin-top: 11px;
+        }
+
+        h1.duty {
+            color: $gray-1;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 116%;
+            font-variant: small-caps;
+        }
+
+        h2.name {
+            color: $gray-2;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 132%;
+            font-variant: small-caps;
+            letter-spacing: 0.4px;
+        }
+
+        p.quote {
+            width: 191px;
+            height: 41px;
+            margin-top: 15.3px;
+            color: $gray-2;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 132%;
+            letter-spacing: 0.48px;
+        }
+    }
+}
+
+.people-img {
+    width: 99.076px;
+    height: 173.738px;
+}
+
+.item-container:nth-child(1) .people-img {
+    background-image: url('images/r.png');
+    @include img-bg-prop;
+  }
+  
+ .item-container:nth-child(2) .people-img {
+    background-image: url('images/women.png');
+    @include img-bg-prop;
+  }
+  
+.item-container:nth-child(3) .people-img {
+    background-image: url('images/philip.svg');
+    @include img-bg-prop;
+  }
+  
+.item-container:nth-child(4) .people-img {
+    background-image: url('images/women-desktop.png');
+    @include img-bg-prop;
+    background-size: contain
+  }

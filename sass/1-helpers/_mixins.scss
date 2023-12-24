@@ -1,86 +1,9 @@
+// Mobile design mixins
+
 @mixin section {
     position: relative;
     display: flex;
     padding-left: 32px;
-}
-
-@mixin grid-items {
-    #car-rental {
-        background: #FFF;
-        box-shadow: 0px 3.163px 16.869px 0px rgba(155, 148, 148, 0.17);
-    }
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-        width: 155.071px;
-        height: 127.61px;
-        border-radius: 4.308px;
-        padding: 22px;
-        gap: 8px;
-    }
-
-    .grid-icon-bg {
-        width: 25.326px;
-        height: 25.326px;
-        border-radius: 4.308px;
-        background: $white-1;
-        box-shadow: 0px 2.154px 2.154px 0px rgba(0, 0, 0, 0.04);
-        display: flex;
-        padding: 5px;
-    }
-
-    .grid-icon-bg-g {
-        width: 25.326px;
-        height: 25.326px;
-        border-radius: 4.308px;
-        background: #647B64;
-        display: flex;
-        padding: 5px;
-    }
-
-    .grid-heading {
-        width: 72.69px;
-        height: 16.692px;
-        color: $gray-1;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 116%;
-        font-variant: small-caps;
-    }
-
-    .grid-p {
-        width: 113.459px;
-        height: 27.352px;
-        color: $gray-2;
-        font-size: 8px;
-        font-weight: 400;
-        line-height: 132%;
-        letter-spacing: 0.32px;
-    }
-}
-
-@mixin section-3-card-3 {
-    .code-h {
-        width: 89.891px;
-        height: 13.527px;
-        color: $white-1;
-        font-size: 10px;
-        font-weight: 500;
-        line-height: 116%;
-        font-variant: small-caps;
-        margin-top: 10.47px;
-    }
-
-    p {
-        width: 113.455px;
-        height: 27.491px;
-        color: $white-1;
-        font-size: 8px;
-        font-weight: 500;
-        line-height: 132%;
-        letter-spacing: 0.32px;
-        margin-top: 2.62px;
-    }  
 }
 
 @mixin button {
@@ -110,14 +33,88 @@
     }
 }
 
-@mixin reset {
-    header *, main *, .section-1 *, .section-2 *, .section-3 *, .section-3-h *, .section-4 *, .section-5 *, footer * {
-        padding: 0;
-        margin: 0;
-        width: auto;
-        height: auto;
-        gap: 0;
-        row-gap: 0;
-        column-gap: 0;
+@mixin container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+@mixin p {
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: 0.4px;
+    color: $gray-2;
+}
+
+@mixin h2 {
+    color: #F3B562;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@mixin h1 {
+    color: #647B64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+@mixin img-bg-prop {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin socials-icon-size {
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+@mixin bg-blur {
+    width: 122.345px;
+    height: 123.305px;
+    position: absolute;
+}
+
+// Desktop design mixins
+
+@mixin desktop-button {
+    .intro-button {
+        button {
+            width: 350px;
+            height: 73px;
+            border-radius: 2px;
+            font-size: 16px;
+            letter-spacing: 2.48px;
+            padding: 27px 29px;
+
+            img {
+                width: 22px;
+                height: 15px;
+            }
+        }
     }
+}
+
+@mixin desktop-h1-h2 {
+    h1 {
+        font-size: 41px;
+        width: fit-content;
+    }
+
+    h2 {
+        font-size: 24px;
+        width: fit-content;
+    }
+}
+
+@mixin desktop-bg-blur-size {
+    width: 255px;
+    height: 257px;
 }
